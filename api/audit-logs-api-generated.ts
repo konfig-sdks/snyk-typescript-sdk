@@ -3,7 +3,7 @@
 /*
 Snyk API
 
-Missing description placeholder
+Snyk helps software-driven businesses develop fast and stay secure. Continuously find and fix vulnerabilities for npm, Maven, NuGet, RubyGems, PyPI and more.
 
 The version of the OpenAPI document: REST
 
@@ -39,7 +39,7 @@ export const AuditLogsApiAxiosParamCreator = function (configuration?: Configura
          * @param {string} version The requested version of the endpoint to process the request
          * @param {string} groupId The ID of the Group.
          * @param {string} [cursor] The ID for the next page of results.
-         * @param {string | Date} [from] The start date (inclusive) of the audit logs search. Example: 2023-07-27 
+         * @param {string | Date} [from] The start date (inclusive) of the audit logs search. If this is not specified, the start of yesterday is used. Example: 2023-07-27 
          * @param {string | Date} [to] The end date (inclusive) of the audit logs search. Example: 2023-07-27 
          * @param {number} [size] Number of results to return per page.
          * @param {'ASC' | 'DESC'} [sortOrder] Order in which results are returned.
@@ -142,7 +142,7 @@ export const AuditLogsApiAxiosParamCreator = function (configuration?: Configura
          * @param {string} version The requested version of the endpoint to process the request
          * @param {string} orgId The ID of the organization.
          * @param {string} [cursor] The ID for the next page of results.
-         * @param {string | Date} [from] The start date (inclusive) of the audit logs search. Example: 2023-07-27 
+         * @param {string | Date} [from] The start date (inclusive) of the audit logs search. If this is not specified, the start of yesterday is used. Example: 2023-07-27 
          * @param {string | Date} [to] The end date (inclusive) of the audit logs search. Example: 2023-07-27 
          * @param {number} [size] Number of results to return per page.
          * @param {'ASC' | 'DESC'} [sortOrder] Order in which results are returned.
@@ -333,7 +333,7 @@ export type AuditLogsApiSearchGroupAuditLogsRequest = {
     readonly cursor?: string
     
     /**
-    * The start date (inclusive) of the audit logs search. Example: 2023-07-27 
+    * The start date (inclusive) of the audit logs search. If this is not specified, the start of yesterday is used. Example: 2023-07-27 
     * @type {string | Date}
     * @memberof AuditLogsApiSearchGroupAuditLogs
     */
@@ -419,7 +419,7 @@ export type AuditLogsApiSearchOrganizationAuditLogsRequest = {
     readonly cursor?: string
     
     /**
-    * The start date (inclusive) of the audit logs search. Example: 2023-07-27 
+    * The start date (inclusive) of the audit logs search. If this is not specified, the start of yesterday is used. Example: 2023-07-27 
     * @type {string | Date}
     * @memberof AuditLogsApiSearchOrganizationAuditLogs
     */
